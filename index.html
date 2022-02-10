@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Get To Know You Game For ABC Team</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pt-1 d-flex justify-content-center">
+            <div class="col-8 main-content">
+
+                <!-- Game Description Card -->
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h3 class="card-title">Get To Know You</h3>
+                        <p class="card-text">This game is to warm-up our group by helping the members to get to know each other. You will be preseted with a question and member name who will have to answer that question. Also there will be a countdown timer, you have to answer in that time span only.</p>
+                    </div> <!-- ./card-body -->
+                </div> <!-- ./card -->
+
+                <div class="card m-1">
+                    <div class="card-body">
+                        <p class="card-text"> Question: <span id="gameQuestion" class="dynamicData"></span></p>
+                        <p class="card-text">Person To Answer: <span id="gamePerson" class="dynamicData"></span></p>
+                        <p class="card-text">Seconds Left: <span id="ticker" class="dynamicData"></span></p>
+                    </div> <!-- ./card-body -->
+                </div> <!-- ./card -->
+
+                <nav class="navbar navbar-light bg-light m-1">
+                    <div class="container">
+                        <button type="button" class="btn btn-primary" id="btnNextQuestion">Next Question</button>
+                        <button type="button" class="btn btn-danger" id="btnStopGame">Stop Game</button>
+                        <button type="button" class="btn btn-warning" id="btnStopTimer">Stop Timer</button>
+                    </div>
+                </nav> <!-- ./navbar -->
+
+                <nav class="navbar navbar-light bg-light m-1">
+                    <div class="container rounded">
+                        <a class="navbar-brand">Made with <span class="heart">&hearts;</span> by Rahul Raj</a>
+                    </div>
+                </nav> <!-- ./navbar -->
+
+            </div> <!-- ./main-content -->
+        </div><!-- ./row -->
+    </div> <!-- ./ container-fluid -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

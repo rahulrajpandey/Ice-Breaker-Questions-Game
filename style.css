@@ -1,0 +1,17 @@
+body {
+  background-color: #c0c2be;
+}
+
+.card-text {
+  font-weight: bold;
+}
+
+.dynamicData {
+  background: #f3fce9;
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heart {
+  color: red;
+}
