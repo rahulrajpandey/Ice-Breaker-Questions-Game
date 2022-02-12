@@ -88,6 +88,17 @@
     return questionsArray[questionIndex];
   } // function getNextQuestion ends
 
+  // function to generate random Index from [0 - limitForRandom)
+  function getRandomIndex(limitForRandom) {
+    return Math.floor(Math.random() * limitForRandom);
+  } // function getRandomIndex ends
+
+  // function to return next question from questionsArray
+  function getNextQuestion() {
+    let questionIndex = getRandomIndex(questionsArray.length); // get random index
+    return questionsArray[questionIndex];
+  } // function getNextQuestion ends
+
   // function to return next unplayed participant name from participantsArray
   function getNextParticipantName() {
     // check if playedParticipantArray contains all items from participantsArray
@@ -97,11 +108,10 @@
       }
     }
     // find the next participant
-    const numberOfParticipants = participantsArray.length - 1; // to match with the index in array
     let participantIndex = -1;
 
     do {
-      participantIndex = getRandomIndex(numberOfParticipants); // get random index
+      participantIndex = getRandomIndex(participantsArray.length); // get random index
     } while (playedParticipantArray.includes(participantIndex));
 
     playedParticipantArray.push(participantIndex); // add into playedParticipantArray
